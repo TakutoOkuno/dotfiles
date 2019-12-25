@@ -83,3 +83,22 @@ alias ll='ls -l'
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
+
+function __fuzzy_history()
+{
+    local _query
+    local _command
+    if (( $#BUFFER != 0 )); then
+        _query="^$BUFFER"
+    else
+        _query=''
+    fi
+    _command=$(history -nr 1 | fzf --query="$_query")
+    if [ -n "$_command" ]; then
+        BUFFER=$_command
+        zle accept-line
+    fi
+}
+autoload -Uz __fuzzy_history
+zle -N __fuzzy_history
+bindkey '^r' __fuzzy_history
