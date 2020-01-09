@@ -1,3 +1,6 @@
+# migration from bash
+[ -f ~/.bash_profile ] && source ~/.bash_profile
+
 # history
 HISTFILE=$ZDOTDIR/.zsh_history
 HISTSIZE=10000
