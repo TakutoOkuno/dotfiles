@@ -1,0 +1,12 @@
+[alias]
+    amend = commit --amend -C HEAD
+    graph = log --graph --color --all --date-order --decorate --oneline
+    details = log --graph --color --all --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    overview = log --graph --color --all --date-order --decorate --stat --find-renames
+[core]
+    editor = vi
+    pager = less -x4
+    quotepath = false
+[user]
+	name = TakutoOkuno
+	email = takuto.okuno.ku0823@gmail.com
