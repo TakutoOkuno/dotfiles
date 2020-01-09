@@ -79,6 +79,7 @@ abbrev-alias -g G='| grep --color=yes -Hn'
 abbrev-alias -g F='| fzf'
 
 # alias
+alias ls='ls -G'
 alias ll='ls -l'
 
 # Use emacs keybindings even if our EDITOR is set to vi
@@ -102,3 +103,6 @@ function __fuzzy_history()
 autoload -Uz __fuzzy_history
 zle -N __fuzzy_history
 bindkey '^r' __fuzzy_history
+
+# dependent on environment setting
+alias ios-localhost-log-viewer='node "/Users/okuno.takuto/develop/revamp/offline-item-search-opez-app/tools/log-viewer/dist/index.js"'
