@@ -7,6 +7,4 @@
     editor = vi
     pager = less -x4
     quotepath = false
-[user]
-	name = TakutoOkuno
-	email = takuto.okuno.ku0823@gmail.com
+    excludesfile = ~/.gitignore_global

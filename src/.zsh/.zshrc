@@ -57,7 +57,7 @@ if command -v powerline-go >/dev/null; then
             -modules ssh,cwd,perms,jobs,exit \
             -modules-right duration,git \
             -numeric-exit-codes \
-            -path-aliases $'\~/.ghq=@GIT,\~/Library/Mobile Documents/com~apple~CloudDocs=@iCloud' \
+            -path-aliases $'\~/develop=@DEV,\~/Library/Mobile Documents/com~apple~CloudDocs=@iCloud' \
             -shell zsh \
         )"
     }
