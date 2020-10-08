@@ -28,6 +28,8 @@ zplugin load zsh-users/zsh-autosuggestions
 zplugin load zsh-users/zsh-completions
 zplugin load zsh-users/zsh-syntax-highlighting
 
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 autoload -U compinit
 compinit -C
 
