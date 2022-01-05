@@ -13,20 +13,20 @@ setopt hist_no_store
 setopt hist_reduce_blanks
 setopt share_history
 
-# zplugin
-. "$ZDOTDIR/.zplugin/bin/zplugin.zsh"
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
+# zinit
+. "$ZDOTDIR/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
-zplugin load hlissner/zsh-autopair
-zplugin ice from"gh-r" as"command"
-zplugin load junegunn/fzf-bin
-zplugin ice from"gh-r" as"command" mv"powerline-go-* -> powerline-go"
-zplugin load justjanne/powerline-go
-zplugin load momo-lab/zsh-abbrev-alias
-zplugin load zsh-users/zsh-autosuggestions
-zplugin load zsh-users/zsh-completions
-zplugin load zsh-users/zsh-syntax-highlighting
+zinit load hlissner/zsh-autopair
+zinit ice from"gh-r" as"command"
+zinit load junegunn/fzf-bin
+zinit ice from"gh-r" as"command" mv"powerline-go-* -> powerline-go"
+zinit load justjanne/powerline-go
+zinit load momo-lab/zsh-abbrev-alias
+zinit load zsh-users/zsh-autosuggestions
+zinit load zsh-users/zsh-completions
+zinit load zsh-users/zsh-syntax-highlighting
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
